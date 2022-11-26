@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/link';
-
+import LogoSVG from '../public/logos/ltf-logo.svg';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -12,16 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          <Link href='/store'>Shop!</Link>
-        </h1>
-        <br />
-        <p className={styles.menu}>
-          <Link href='/store/mens'>Mens</Link>,{' '}
-          <Link href='/store/womens'>Womens</Link>,{' '}
-          <Link href='/store/outerwear'>Outerwear</Link>,{' '}
-          <Link href='/store/hats'>Hats</Link>
-        </p>
+        <LogoSVG className={styles.logo} />
       </main>
     </div>
   );

@@ -1,11 +1,9 @@
 import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <>
       <Head>
         <link
           rel='apple-touch-icon'
@@ -26,12 +24,9 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel='manifest' href='/images/favicon_io/site.webmanifest' />
       </Head>
-      <Header />
-      <div className='body'>
-        <Component {...pageProps} />
-      </div>
-      <Footer />
-    </div>
+
+      <Component {...pageProps} />
+    </>
   );
 }
 
